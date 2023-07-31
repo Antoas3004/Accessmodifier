@@ -1,0 +1,31 @@
+public class Private {
+
+	// private keyword is used with
+	// methods, variables, constructors
+	// private keyword can't use with classes
+	// private method cant access with another class
+	// private acceccmodifier only access inside the class
+
+	private int a = 15;
+
+	private void m() {
+		System.out.println(a);
+	}
+
+	public static void main(String[] args) {
+		Private obj = new Private();
+		System.out.println(obj.a);
+		obj.m();
+	}
+}
+//create another class
+//let complie error because private method and variabe only access with that class
+
+public class Simple{  
+ public static void main(String args[]){  
+   A obj=new A();  
+   System.out.println(obj.data);  //Compile Time Error  
+   obj.msg();  //Compile Time Error  
+   }  
+}  
+
