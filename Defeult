@@ -1,0 +1,23 @@
+//create two class on same package
+//if we don't use any modifiers it treated as default by default
+
+package Accessmodifier;
+
+class Default_A {       //create class 1
+
+	void m() {
+		System.out.println("anto");
+	}
+}
+
+package Accessmodifier;
+
+public class Default_B {      //create class 2
+
+	public static void main(String[] args) {          //main class
+ 		Default_A C=new Default_A();
+		C.m();
+		}
+}
+//if u access this defult class in another pack it doesn't access
+//default only access with package level
