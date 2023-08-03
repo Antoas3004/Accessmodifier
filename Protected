@@ -1,0 +1,22 @@
+package Inheeritance; //different package 
+
+public class Protected1 {  //parent class
+	protected void m() {      // protected method 
+		System.out.println("antos");
+	}
+}
+
+package Accessmodifier;        //different package
+
+import Inheeritance.Protected1;    //import parent class package to access protected method
+
+public class Protected extends Protected1 {          //child class 
+	
+	//producted access modifiers access package to pakage through inheritance
+	//child class
+	
+	public static void main(String args[]) {
+		Protected a = new Protected();
+		a.m();        //call protected class through the child class
+	}
+}
